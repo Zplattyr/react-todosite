@@ -1,8 +1,6 @@
 import React from 'react';
 import classNames from 'classnames';
 
-import { useSelector } from 'react-redux';
-
 let toDoListOriginal = [];
 let toDoListDuplicate = [];
 let tasks = [];
@@ -11,7 +9,7 @@ function Tasks({ firestore, user }) {
   const [state, setstate] = React.useState(false);
   const [isOuting, setOutingState] = React.useState(false);
   const inputRef = React.useRef();
-  console.log(user);
+  console.log(state);
 
   React.useEffect(() => {
     if (user) {
